@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buy Stuff</title>
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/sweetalert/dist/sweetalert.css" />
+    <!-- endbower -->
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app/purchase/purchase.css">
+    <!-- endinject -->
+  </head>
+  <body>
+    
+    <div ui-view></div>
+
+    <script src="https://checkout.stripe.com/checkout.js"></script>    
+
+    <!-- bower:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+    <script src="bower_components/angular-stripe-checkout/angular-stripe-checkout.js"></script>
+    <script src="bower_components/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="bower_components/ngSweetAlert/SweetAlert.js"></script>
+    <!-- endbower -->
+
+    <!-- inject:js -->
+    <script src="app/app.module.js"></script>
+    <script src="app/auth/auth.module.js"></script>
+    <script src="app/login/login.module.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <script src="app/purchase/purchase.module.js"></script>
+    <script src="app/app.controller.js"></script>
+    <script src="app/auth/auth.factory.js"></script>
+    <script src="app/auth/auth.interceptor.js"></script>
+    <script src="app/login/login.controller.js"></script>
+    <script src="app/core/order.factory.js"></script>
+    <script src="app/core/product.factory.js"></script>
+    <script src="app/purchase/purchase.controller.js"></script>
+    <!-- endinject -->
+  </body>
+
+</html>
