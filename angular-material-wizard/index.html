@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css'/>
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    <div ui-view></div>
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js'></script>
+
+  <script src="app/app.module.js"></script>
+  <script src="app/confirm/confirm.ctrl.js"></script>
+  <script src="app/final/final.ctrl.js"></script>
+  <script src="app/patient-detail/patientDetail.ctrl.js"></script>
+  <script src="app/splash/splash.ctrl.js"></script>
+  <script src="app/wizard/wizard.ctrl.js"></script>
+  <script src="app/emergency-contacts/emergencyContacts.ctrl.js"></script>
+</body>
+
+</html>

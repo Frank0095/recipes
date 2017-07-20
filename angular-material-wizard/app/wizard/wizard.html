@@ -1,0 +1,23 @@
+<a ui-sref="splash">
+  <small ui-sref="splash"><span class="glyphicon glyphicon-arrow-left"></span> Cancel</small>
+</a>
+
+<div class="progress">
+  <div class="progress-bar progress-bar-success" style="width: {{wizardCtrl.progress()}}%;">
+
+  </div>
+</div>
+
+<div class="well">
+  <div ui-view></div>
+</div>
+<div class="well clearfix">
+  <button ng-click="wizardCtrl.previous()" class="btn btn-primary">
+    <span class="glyphicon glyphicon-arrow-left"></span> 
+    Previous
+  </button>
+  <button ng-click="wizardCtrl.next()" class="btn btn-primary pull-right">
+    Next
+    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+   </button>
+</div>
